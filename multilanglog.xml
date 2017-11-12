@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension version="3.x" type="plugin" group="user" method="upgrade">
+    <name>plg_user_multilanglog</name>
+	<author>Kian William Nowrouzian</author>
+	<creationDate>November 2016</creationDate>
+	<copyright>Copyright (C) 2016 - 2040</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>mezmer121@gmail.com</authorEmail>
+	<authorUrl>http://www.extensions.lord121.ir</authorUrl>
+	<version>1.0.0</version>
+	<description><![CDATA[In a Joomla multi-language site, user login redirection shall be to the correct direct page.]]></description>
+	<updateservers>
+		<server type="extension" name="user multilanglog updates" priority="1">http://www.extensions.lord121.ir/myextensions.xml</server>
+	</updateservers>
+	<files>
+		<filename plugin="multilanglog">multilanglog.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB/en-GB.plg_user_multilanglog.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_user_multilanglog.sys.ini</language>
+	</languages>
+</extension>
