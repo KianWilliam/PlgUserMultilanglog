@@ -7,7 +7,7 @@ to make the site redirects to the correct menuitem or file of the same language 
 you may download the plugin at:
 http://www.extensions.lord121.ir/myplugins/multilanglog.html
 and enable it after upload to your joomla site.
-I have to add I used the advice and insight of Sergey Onichshenkov to develop this module,
+I have to add I used the advice and insight of Sergey Onichshenkov to develop this plugin,
 also in case of any question email me at:
 mezmer121@gmail.com
 or go to http://www.extensions.lord121.ir/support.html and send me a message.
