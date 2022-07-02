@@ -1,0 +1,36 @@
+<extension version="3.x" type="plugin" group="user" method="upgrade">
+    <name>plg_user_multilanglogj4</name>
+	<author>Kian William Nowrouzian</author>
+	<creationDate>June 2022</creationDate>
+	<copyright>Copyright (C) 2016 - 2040</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>mezmer121@gmail.com</authorEmail>
+	<authorUrl>http://www.extensions.kwproductions121.com</authorUrl>
+	<version>1.0.0</version>
+	<scriptfile>script.php</scriptfile>
+	<description><![CDATA[In a Joomla multi-language site, user login redirection shall be to the correct redirect page.]]></description>
+	<updateservers>
+		<server type="extension" name="user multilanglogj4 updates" priority="1">http://www.extensions.kwproductions121.com/myextensions.xml</server>
+	</updateservers>
+	<files>
+		<filename plugin="multilanglogj4">multilanglogj4.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_user_multilanglogj4.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_user_multilanglogj4.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="urlang"
+					type="textarea"
+					label="PLG_USER_MULTILANGLOG_LABEL"
+					description="PLG_USER_MULTILANGLOG_DESC"
+					default="example.com en-GB | exmaple2.com fr-FR"
+				/>
+				</fieldset>
+				</fields>
+		</config>
+	
+</extension>
