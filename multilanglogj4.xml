@@ -8,26 +8,103 @@
 	<authorUrl>http://www.extensions.kwproductions121.com</authorUrl>
 	<version>1.0.0</version>
 	<scriptfile>script.php</scriptfile>
-	<description><![CDATA[In a Joomla multi-language site, user login redirection shall be to the correct redirect page.]]></description>
+	<description><![CDATA[In a Joomla multi-language site, user login redirection shall be to the correct redirect page. In the list of plugins order this plugin as the last one to get the optimum result!]]></description>
 	<updateservers>
 		<server type="extension" name="user multilanglogj4 updates" priority="1">http://www.extensions.kwproductions121.com/myextensions.xml</server>
 	</updateservers>
 	<files>
 		<filename plugin="multilanglogj4">multilanglogj4.php</filename>
+		<folder>assets</folder>
 	</files>
 	<languages>
 		<language tag="en-GB">language/en-GB/en-GB.plg_user_multilanglogj4.ini</language>
 		<language tag="en-GB">language/en-GB/en-GB.plg_user_multilanglogj4.sys.ini</language>
 	</languages>
 	<config>
-		<fields name="params">
+		<fields name="params" addfieldpath="plugins/user/multilanglogj4/assets">
 			<fieldset name="basic">
+			<field 
+				name="yesnoa" 
+				type="radio"
+				label="PLG_USERSUCCESSYESNO_MULTILANGLOG_LABEL"
+				description="PLG_USERSUCCESSYESNO_MULTILANGLOG_DESC"
+				default="0"
+				>
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</field>
 				<field
 					name="urlang"
-					type="textarea"
-					label="PLG_USER_MULTILANGLOG_LABEL"
-					description="PLG_USER_MULTILANGLOG_DESC"
-					default="example.com en-GB | exmaple2.com fr-FR"
+					type="mtextarea"
+					label="Redirection After Successful Login"
+					description="To which page you are to go after login to your site!"
+				/>
+				<field 
+				name="yesnob" 
+				type="radio"
+				label="PLG_USERLOGINFAILYESNO_MULTILANGLOG_LABEL"
+				description="PLG_USERLOGINFAILYESNO_MULTILANGLOG_DESC"
+				default="0"
+				>
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</field>
+				<field
+					name="urlangb"
+					type="mtextarea"
+					label="Redirection After Failure To Login"
+					description="To which page to go when login is failed!"
+				/>
+				<field 
+				name="yesnoc" 
+				type="radio"
+				label="PLG_USERREGISTERYESNO_MULTILANGLOG_LABEL"
+				description="PLG_USERREEGISTERYESNO_MULTILANGLOG_DESC"
+				default="0"
+				>
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</field>
+				<field
+					name="urlangc"
+					type="mtextarea"
+					label="Redirection After Registration"
+					description="To Which page to go after Registration!"
+
+				/>
+				<field 
+				name="yesnod" 
+				type="radio"
+				label="PLG_USERLOGOUTYESNO_MULTILANGLOG_LABEL"
+				description="PLG_USERLOGOUTYESNO_MULTILANGLOG_DESC"
+				default="0"
+				>
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</field>
+				<field
+					name="urlangd"
+					type="mtextarea"
+					label="Redirection After Logout"
+					description="To which page to go after logout!"
+
+				/>
+				<field 
+				name="yesnoe" 
+				type="radio"
+				label="PLG_USERPROFILEYESNO_MULTILANGLOG_LABEL"
+				description="PLG_USERPROFILEYESNO_MULTILANGLOG_DESC"
+				default="0"
+				>
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</field>
+				<field
+					name="urlange"
+					type="mtextarea"
+					label="Redirection After Edit User's Profile"
+					description="To which page to go after you edit your profile!"
+
 				/>
 				</fieldset>
 				</fields>
